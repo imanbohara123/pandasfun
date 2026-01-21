@@ -33,3 +33,21 @@
 #Data types
 #check for missing values
 #df.isnull().sum()
+
+#Removing the columns
+#df = df.drop(columns=["columnsn"])
+#df=df.drop([5]) use for the drop row of data table
+
+#set the name column as index 
+#df.set_index('names',inplace = True)
+#The loc use for the indexing the categories data and iloc use for category as well as numeric
+#Can plot through the pandas but not useful through pandas
+#loc is use for the slicing and indexing
+
+
+#df = df.dropna(axis=1) column will minus not row will constant
+#df_clean = pd.Dataframe(df_nan['age']).fillna(df_nan[age].median()))
+#The null values filled by the fillna(30any value enter)
+#df_concat = pd.merge(df_clean,df.nam['score'].fillna(df_nan['score'].mean()),how='outer', on = df_nan['Name'])
+# The how = 'any' always if one nan enter then it can't drop full row one
+# #The how = 'all' can drop full row one
